@@ -1,2 +1,2 @@
-# FYP-Model
+# Bitcoin Price Prediction
  
