@@ -4,10 +4,8 @@ import pandas as pd
 import talib
 
 epochs_list = [500, 1000, 1500, 2000]
-
 first_layer_param = [50, 100, 150, 200, 250]
 second_layer_param = [25, 50, 75, 100, 150]
-
 
 # default df
 df = pd.read_csv("data.csv")
@@ -59,10 +57,10 @@ for e in epochs_list:
       epochs = e
       layer1 = flp
       layer2 = slp
-
+      
       if layer1 >= layer2:
         continue
-
+      
       print("============ LAYERS PARAMS============")
       print(f"Epochs: {epochs}")
       print(f"Layer 1: Dense with {layer1}")
