@@ -58,8 +58,8 @@ for e in epochs_list:
       layer1 = flp
       layer2 = slp
       
-      if layer1 >= layer2:
-        continue
+      if layer1 == layer2:
+        break
       
       print("============ LAYERS PARAMS============")
       print(f"Epochs: {epochs}")
